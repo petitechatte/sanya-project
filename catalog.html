@@ -5,55 +5,89 @@
     <title>Студия Nerds каталог</title>
     <link rel="stylesheet" href="css/style_index.css">
   </head>
+
   <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-    <a class="main-header-logo" href="index.html">
-      <img class="logo-main" src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии Nerds">
-    </a>
-    <ul class="site-navigation">
-      <li><a href="index.html">Студия</a></li>
-      <li><a href="clients.html">Клиенты</a></li>
-      <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <ul class="user-navigation">
-      <li class="basket-link"><a href="#">Корзина</a></li>
-    </ul>
-    </nav>
-      <!-- ! КУКУ КРАСНЫЙ КОММЕНТ -->
-      <!-- TODO: доделать -->
-    <h1>Магазин готовых шаблонов</h1>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <img class="logo-main" src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии Nerds">
+        <ul class="site-navigation">
+          <li><a href="index.html" aria-label="Переход на главную страницу">Студия</a></li>
+          <li><a href="clients.html" aria-label="Переход на страницу с клиентами нашей фирмы">Клиенты</a></li>
+          <li class="site-navigation-current"><a href="catalog.html" aria-label="Переход на страницу магазина">Магазин</a></li>
+          <li><a href="contacts.html" aria-label="Переход на страницу контактов">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="basket-link" ><a href="#" aria-label="Переход в корзину товаров">Корзина</a></li>
+        </ul>
+      </nav>
+      <h1>Магазин готовых шаблонов</h1>
     </header>
-  <main class="container">
-    <section class="filter">
-      <h2 class="header-hidden">Фильтр товаров.</h2>
-      <!-- Здесь будет форма фильтра товаров -->
-    </section>
-    <section class="layouts">
-      <h2 class="header-hidden">Шаблоны веб-сайтов.</h2>
-      <div class="sort">
-        <p class="sort-caption">Сортировать:</p>
-        <ul class="sort-iteems">
-          <li class="sort-item-caption"><a href="#"></a></li>
-          <li class="sort-item-inactive"><a href="#"></a></li>
-          <li class="sort-item-inactive"><a href="#"></a></li>
-        </ul>
-        <ul class="sort-buttoms">
-          <li class="buttom-current"><a href="#"></a></li>
-          <li class="buttom-inactive"><a href="#"></a></li>
-        </ul>
-      </div>
+
+    <main class="container">
+      <section class="filter">
+        <h2 class="filter-header visualy-hidden">Фильтр товаров.</h2>
+        <form class="filter-form" action="hhtp://echo.htmlacademy.ru" method="get" aria-label="Форма фильтра товаров">
+          <div class="slider-coast-container">
+            <label for="slider-coast-label">Стоимость:</label>
+            <input type="range" min="1" max="1500" value="50" class="slider-coast" id="slider-coast-label" aria-label="Слайдер переключения стоимости в фильтре">
+            <button class="coast-button-from" aria-label="Кнопка-ползунок переключения минмимальной стоимости в фильтре"></button>
+            <button class="coast-button-before" aria-label="Кнопка-ползунок переключения максимальной стоимости в фильтре"></button>
+            <label for="coast-from">ОТ</label>
+            <output name="min-cost" id="coast-from" aria-label="Значение нижнее цены">0</output>
+            <label for="coast-before">ДО</label>
+            <output name="max-cost" id="coast-before" aria-label="Значение верхнее цены">15000</output>
+          </div>
+          <div class="filter-radio-grid">
+            <p>Сетка:</p>
+            <input type="radio" id="radio-grid-adaptive" name="radio-grid-adaptive" aria-label="Переключатель выбирает адаптивную сетку" checked>
+            <label for="radio-grid-adaptive">Адаптивная</label>
+            <input type="radio" id="radio-grid-fixed" name="radio-grid-fixed" aria-label="Переключатель выбирает фиксированную сетку">
+            <label for="radio-grid-fixed">Фиксированная</label>
+            <input type="radio" id="radio-grid-rubber" name="radio-grid-rubber" aria-label="Переключатель выбирает резиновую сетку" disabled>
+            <label for="radio-grid-rubber">Резина</label>
+          </div>
+          <div class="filter-checkbox-features">
+            <p>Особенности:</p>
+            <input type="checkbox" id="features-radio-slider" name="features-radio" value="slider" aria-label="Чекбокс выбирает наличие слайдера" checked>
+            <label for="features-radio-slider">Слайдер</label>
+            <input type="checkbox" id="features-radio-feautures" name="features-radio" aria-label="Чекбокс выбирает наличие спсика преимуществ" value="feautures">
+            <label for="features-radio-feautures">Блок преимуществ</label>
+            <input type="checkbox" id="features-radio-news" name="features-radio" aria-label="Чекбокс выбирает наличие блока новостей" value="news" checked>
+            <label for="features-radio-news">Новости</label>
+            <input type="checkbox" id="features-radio-gallery" name="features-radio" aria-label="Чекбокс выбирает наличие галереи" value="gallery">
+            <label for="features-radio-gallery">Галлерея</label>
+            <input type="checkbox" id="features-radio-basket" name="features-radio" aria-label="Чекбокс выбирает наличие корзины покупок" value="basket">
+            <label for="features-radio-basket">Галлерея</label>
+          </div>
+          <button type="submit" name="filter-form-button" value="Показать" aria-label="При нажатии на кнопку отправиться значения формы"></button>
+        </form>
+      </section>
+
+      <section class="layouts">
+        <h2 class="header-hidden">Шаблоны веб-сайтов.</h2>
+        <div class="sort">
+          <p class="sort-caption">Сортировать:</p>
+          <ul class="sort-iteems">
+            <li class="sort-item-caption"><a href="#"></a></li>
+            <li class="sort-item-inactive"><a href="#"></a></li>
+            <li class="sort-item-inactive"><a href="#"></a></li>
+          </ul>
+          <ul class="sort-buttoms">
+            <li class="buttom-current"><a href="#"></a></li>
+            <li class="buttom-inactive"><a href="#"></a></li>
+          </ul>
+        </div>
+      </section>
 
       <section class="gallery">
-        <h2 class="header-hidden">Галерея готовых шаблонов.</h2>
+        <h2 class="gallery-header visualy-hidden">Галерея готовых шаблонов.</h2>
         <ul class="gallery-items">
-          <li class="gallery-item"><img src="img/img-sedona.jpg" width="360px" height="576px" alt="Sedoyf макет."></li>
-          <li class="gallery-item"><img src="img/img-pink.jpg" width="360px" height="576px" alt="Pink шаблон"></li>
-          <li class="gallery-item"><img src="img/img-barbershop.jpg" width="360px" height="576px" alt="Borodinski макет"></li>
-          <li class="gallery-item"><img src="img/img-mishka.jpg" width="360px" height="576px" alt="Mishka макет."></li>
-          <li class="gallery-item"><img src="img/img-aplus.jpg" width="360px" height="576px" alt="Aplus макет."></li>
-          <li class="gallery-item"><img src="img/img-kvast.jpg"  width="360px" height="576px" alt="Кваст макет."></li>
+          <li class="gallery-item"><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedoyf макет."></li>
+          <li class="gallery-item"><img src="img/img-pink.jpg" width="360" height="576" alt="Pink шаблон"></li>
+          <li class="gallery-item"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinski макет"></li>
+          <li class="gallery-item"><img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka макет."></li>
+          <li class="gallery-item"><img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus макет."></li>
+          <li class="gallery-item"><img src="img/img-kvast.jpg"  width="360" height="576" alt="Кваст макет."></li>
         </ul>
         <div class="pages">
           <ul class="pages-items">
@@ -64,58 +98,62 @@
           </ul>
         </div>
       </section>
-        <div class="sedona-hover">
-          <h3>SEDONA</h3>
-          <p>Информацинный сайт для туристов.</p>
-          <b class="cost">9900 руб.</b>
-        </div>
-        <div class="a-plus-hover">
-          <h3>A PLUS</h3>
-          <p>Лендинг курсов повышения квалификации.</p>
-          <b class="cost">9900 руб.</b>
-        </div>
-        <div class="kvast-hover">
-          <h3>КВАСТ</h3>
-          <p>Промо-сайт производителя крафтового кваса.</p>
-          <b class="cost">9900 руб.</b>
-        </div>
-        <div class="barbershop-hover">
-          <h3>BARBERSHOP</h3>
-          <p>Сайт салоны красоты. <br> Для мужчин, да.</p>
-          <b class="cost">9900 руб.</b>
-        </div>
-        <div class="mishka-hover">
-          <h3>MISHKA</h3>
-          <p>Интерент-магазин вязаных игрушек.</p>
-          <b class="cost">9900 руб.</b>
-        </div>
-        <div class="pink-hover">
-          <h3>PINK APP</h3>
-          <p>Продуктовый лендинг приложения для IOS и Android.</p>
-          <b class="cost">9900 руб.</b>
-        </div>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <div class="footer-contact-map">
-      <div class="footer-contact">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург, <br>
-            ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>тел. +7(812)275-75-75</p>
-        <a class="footer-contact-button" href="#">Напишите нам</a>
+
+      <div class="sedona-hover">
+        <h3>SEDONA</h3>
+        <p>Информацинный сайт для туристов.</p>
+        <b class="cost">9900 руб.</b>
       </div>
-    </div>
-    <div class="footer-social">
-      <b>Давайте дружить это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-      <ul class="social">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фэйсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
-    </div>
-  </footer>
+      <div class="a-plus-hover">
+        <h3>A PLUS</h3>
+        <p>Лендинг курсов повышения квалификации.</p>
+        <b class="cost">9900 руб.</b>
+      </div>
+      <div class="kvast-hover">
+        <h3>КВАСТ</h3>
+        <p>Промо-сайт производителя крафтового кваса.</p>
+        <b class="cost">9900 руб.</b>
+      </div>
+      <div class="barbershop-hover">
+        <h3>BARBERSHOP</h3>
+        <p>Сайт салоны красоты. <br> Для мужчин, да.</p>
+        <b class="cost">9900 руб.</b>
+      </div>
+      <div class="mishka-hover">
+        <h3>MISHKA</h3>
+        <p>Интерент-магазин вязаных игрушек.</p>
+        <b class="cost">9900 руб.</b>
+      </div>
+      <div class="pink-hover">
+        <h3>PINK APP</h3>
+        <p>Продуктовый лендинг приложения для IOS и Android.</p>
+        <b class="cost">9900 руб.</b>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-contact-map">
+        <div class="footer-contact">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург, <br>
+          ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>тел. +7(812)275-75-75</p>
+          <a class="footer-contact-button" href="#" aria-label="Ссылка на форму отправки данных">Напишите нам</a>
+        </div>
+      </div>
+      <div class="footer-social">
+        <b>Давайте дружить это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <ul class="social">
+          <li><a class="social-button"  href="https://vk.com/" aria-label="Переход на нашу страницу в ВК">Вконтакте</a></li>
+          <li><a class="social-button" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook">Фэйсбук</a></li>
+          <li><a class="social-button" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram">Инстаграм</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
+<!-- Сделал по заданию 4 главы 1 курса -->
+<!-- ?Проверь пожалуйста. Прогнал на валидаторе все работает. -->
+<!-- ! Спасибо!:) -->
