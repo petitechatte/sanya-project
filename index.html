@@ -1,92 +1,104 @@
 ﻿<!-- Сделал по заданию 4 главы 1 курса -->
 <!-- ?Проверь пожалуйста. Прогнал на валидаторе все работает. -->
-<!-- ?Попробовал написать классы по БЭМ --> 
 <!-- ! Спасибо!:) -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Web-студия "NERDS"</title>
+    <title>Студия Nerds</title>
     <link rel="stylesheet" href="css/style_index.css">
   </head>
 
   <body>
     <header class="main-header">
-      <nav class="main-header__main-navigation main-navigation">
-        <a class="main-navigation__logo">
-          <img class="logo-main" width="160" height="65" src="img/nerds-logo.png" alt="Логотип студии Nerds">
-        </a>
-        <ul class="main-navigation__site-navigation">
-          <li><a href="#" aria-label="Переход на страницу студии">Студия</a></li>
-          <li><a href="#" aria-label="Переход на страницу с клиентами нашей фирмы">Клиенты</a></li>
+      <nav class="main-navigation">
+        <img class="logo-main" width="160" height="65" src="img/nerds-logo.png" alt="Логотип студии Nerds">
+        <ul class="site-navigation">
+          <li><a href="index.html" aria-label="Переход на главную страницу">Студия</a></li>
+          <li><a href="clients.html" aria-label="Переход на страницу с клиентами нашей фирмы">Клиенты</a></li>
           <li><a href="catalog.html" aria-label="Переход на страницу магазина">Магазин</a></li>
-          <li><a href="#" aria-label="Переход на страницу контактов">Контакты</a></li>
+          <li><a href="contacts.html" aria-label="Переход на страницу контактов">Контакты</a></li>
         </ul>
-        <ul class="main-navigation__user-navigation">
-          <li class="main-navigation__basket-link"><a href="#" aria-label="Переход в корзину товаров">Корзина</a></li>
+        <ul class="user-navigation">
+          <li class="basket-link"><a href="#" aria-label="Переход в корзину товаров">Корзина</a></li>
         </ul>
       </nav>
 
       <section class="slide-items">
-        <h2 class="visually-hidden">Слайдер</h2>
-        <div class="slide-items__slide slide">
-          <b class="slide__lead">Долго, дорого скурпулезно.</b>
-          <p class="slide__text">Математически выверенный дизайн длдя вашего сайта или мобильного приложения.</p>
-          <a class="slide__link" href="#" aria-label="Ссылка на переход на рекламную информацию">Узнать больше</a>
+        <h2 class="slider-heading-hidden">Слайдер рекламный обыкновенный</h2>
+        <div class="slide-item-first">
+          <b class="slide-lead">Долго, дорого скурпулезно.</b>
+          <p class="slide-text">Математически выверенный дизайн длдя вашего сайта или мобильного приложения.</p>
+          <a class="slide-link" aria-label="Ссылка на переход на рекламную информацию">Узнать больше</a>
+          <ul class="slide-controls">
+            <li class="slide-swith-1"></li>
+            <li class="slide-swith-2"></li>
+            <li class="slide-swith-3"></li>
+          </ul>
         </div>
-        <div class="slide-items__slide slide">
-          <b class="slide__lead">Любим математику как никто другой.</b>
-          <p class="slide__text">Никакого креатива, только математические формулы для рассчета идеальных пропорций.</p>
-          <a class="slide__link" href="#" aria-label="Ссылка на переход на рекламную информацию">Узнать больше</a>
+        <div class="slide-item-second">
+          <b class="slide-lead">Любим математику как никто другой.</b>
+          <p class="slide-text">Никакого креатива, только математические формулы для рассчета идеальных пропорций.</p>
+          <a class="slide-button">Узнать больше</a>
+          <ul class="slide-controls">
+            <li class="slide-swith-1"></li>
+            <li class="slide-swith-2"></li>
+            <li class="slide-swith-3"></li>
+          </ul>
         </div>
-        <div class="slide-items__slide slide">
-          <b class="slide__lead">Только ночь, только хардкор.</b>
-          <p class="slide__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="slide__link" href="#" aria-label="Ссылка на переход на рекламную информацию">Узнать больше</a>
+        <div class="slide-item-third">
+          <b class="slide-lead">Только ночь, только хардкор.</b>
+          <p class="slide-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a class="slide-button">Узнать больше</a>
+          <ul class="slide-controls">
+            <li class="slide-swith-1"></li>
+            <li class="slide-swith-2"></li>
+            <li class="slide-swith-3"></li>
+          </ul>
         </div>
-        <ul class="slide-items__slide-controls slide-controls">
-          <li class="slide-controls__switcher"><button class="slide-controls__button-1" type="button" aria-label="Кнопка переключателя"></button></li>
-          <li class="slide-controls__switcher"><button class="slide-controls__button-2" type="button" aria-label="Кнопка переключателя"></button></li>
-          <li class="slide-controls__switcher"><button class="slide-controls__button-3" type="button" aria-label="Кнопка переключателя"></button></li>
-        </ul>
       </section>
     </header>
 
     <main class="container">
-      <h1 class="visually-hidden">Веб-студия Nerds</h1>
-      <section class="container__advantages advantages">
-        <h2 class="visually-hidden">Преимущества студии Nerds</h2>
-        <ul class="advantages__items">
-          <li class="advantages__item">
+      <h1 class="conrainer-heading visualy-hidden">Веб-студия Nerds</h1>
+      <section class="advantages">
+        <h2 class="advantages-heading visualy-hidden">Преимущества студии Nerds</h2>
+        <ul class="advantages-items">
+          
+          <li class="advantages-item">
+            <a class="advantages-item-image1" href="#"><img src="img/advantages-illustration-1.jpg" width="300" height="146" alt="Веб-сайты студии"></a>
             <h3>Веб-сайты</h3>
-            <b class="advantages__lead">Мир никогда не будет прежним после того как увидит ваш сайт!</b>
-            <a class="advantages__button1" href="#">Заказать</a>
+            <b class="triumph">Мир никогда не будет прежним после того как увидит ваш сайт!</b>
+            <a class="advantages-item-button1" href="#">Заказать</a>
           </li>
-          <li class="advantages__item">
+          <li class="advantages-item">
+            <a class="advantages-item-image2" href="#"><img src="img/advantages-illustration-2.jpg" width="300" height="146" alt="Приложения студии."></a>
             <h3>Веб-сайты</h3>
-            <b class="advantages__lead">Покорите топ-10 приложений в AppStore и Google Play</b>
-            <a class="advantages__button2" href="#">Заказать</a>
+            <b class="triumph">Покорите топ-10 приложений в AppStore и Google Play</b>
+            <a class="advantages-item-button2" href="#">Заказать</a>
           </li>
-          <li class="advantages__item">
+          <li class="advantages-item">
+            <a class="advantages-item-image3" href="#"><img src="img/advantages-illustration-3.jpg" width="300" height="146" alt="Презентации студии."></a>
             <h3>Веб-сайты</h3>
-            <b class="advantages__lead">Вы даже не подозреваете,насколько вы изумительны!</b>
-            <a class="advantages__button3" href="#">Заказать</a>
+            <b class="triumph">Вы даже не подозреваете,насколько вы изумительны!</b>
+            <a class="advantages-item-button3" href="#">Заказать</a>
           </li>
         </ul>
       </section>
 
-      <section class="container__studio studio">
-        <h2 class="visually-hidden">Инормация о студии.</h2>
-        <b class="studio__lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+      <section class="studio">
+        <h2 class="studio-handing visualy-hidden">Инормация о студии.</h2>
+        <b class="studio-lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <ul class="studio__items">
-          <li class="studio__services-item">Веб-сайтов любой сложности</li>
-          <li class="studio__services-item">Мобильных приложений для IOS и Android</li>
-          <li class="studio__services-item">Слайдшоу и видео для корпоративных презентаций</li>
+        <ul class="services-items">
+          <li class="services-item">Веб-сайтов любой сложности</li>
+          <li class="services-item">Мобильных приложений для IOS и Android</li>
+          <li class="services-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
+        <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип веб-студии Nerds">
         <span>С 2004 года любим точность во всем:</span>
-        <table class="studio__statistic">
+        <table class="studio-statistic">
           <tr>
             <td>146%</td>
             <td>Уровень самоотдачи</td>
@@ -100,37 +112,37 @@
             <td>Минимальная предоплата</td>
           </tr>
         </table>
-        <section class="container__partners partners">
-          <h2 class="visually-hidden">Наши партнеры</h2>
-          <ul class="partners__list">
-            <li class="partners__list-item"><a href="#" title="HTMLAcademy" aria-label="Переход на страницу Академии"><img src="img/logo-1.png" width="199" height="68" alt="Логотип HTMLAcademy"></a></li>
-            <li class="partners__list-item"><a href="#" title="Barbershop Borodinski" aria-label="Переход на страницу Барбершопа"><img src="img/logo-2.png" width="199" height="68" alt="Логотип Barbershop Borodinski"></a></li>
-            <li class="partners__list-item"><a href="#" title="PINK" aria-label="Переход на страницу PINK"><img src="img/logo-3.png" width="199" height="68" alt="Логотип PINK"></a></li>
-            <li class="partners__list-item"><a href="#" title="MISHKA" aria-label="Переход на страницу MISHKA"><img src="img/logo-4.png" width="199" height="68" alt="Логотип MISHKA"></a></li>
+        <section class="partners">
+          <h2 class="partners-header visualy-hidden">Наши партнеры</h2>
+          <ul class="partners-list">
+            <li class="partners-list-item"><a href="#" title="HTMLAcademy" aria-label="Переход на страницу Академии"><img src="img/logo-1.png" width="199" height="68" alt="Логотип HTMLAcademy"></a></li>
+            <li class="partners-list-item"><a href="#" title="Barbershop Borodinski" aria-label="Переход на страницу Барбершопа"><img src="img/logo-2.png" width="199" height="68" alt="Логотип Barbershop Borodinski"></a></li>
+            <li class="partners-list-item"><a href="#" title="PINK" aria-label="Переход на страницу PINK"><img src="img/logo-3.png" width="199" height="68" alt="Логотип PINK"></a></li>
+            <li class="partners-list-item"><a href="#" title="MISHKA" aria-label="Переход на страницу MISHKA"><img src="img/logo-4.png" width="199" height="68" alt="Логотип MISHKA"></a></li>
           </ul>
         </section>
       </section>
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__contacts contacts">
-        <div class="contacts__contacts">
+      <div class="footer-contact-map">
+        <div class="footer-contact">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург, <br>
           ул. Б. Конюшенная, д. 19/8
           </p>
           <p>тел. +7(812)275-75-75</p>
-          <a class="contacts__button" href="#" aria-label="Ссылка на форму отправки данных">Напишите нам</a>
+          <a class="footer-contact-button" href="#" aria-label="Ссылка на форму отправки данных">Напишите нам</a>
         </div>
       </div>
 
-      <div class="main-footer__social social">
+      <div class="footer-social">
         <b>Давайте дружить это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul class="social__social-links">
-          <li><a class="social__link" href="https://vk.com/" aria-label="Переход на нашу страницу в ВК">Вконтакте</a></li>
-          <li><a class="social__link" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook">Фэйсбук</a></li>
-          <li><a class="social__link" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram">Инстаграм</a></li>
+        <ul class="social">
+          <li><a class="social-button" href="https://vk.com/" aria-label="Переход на нашу страницу в ВК">Вконтакте</a></li>
+          <li><a class="social-button" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook">Фэйсбук</a></li>
+          <li><a class="social-button" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram">Инстаграм</a></li>
         </ul>
       </div>
     </footer>
