@@ -1,35 +1,37 @@
 <!-- Сделал по заданию 4 главы 1 курса -->
 <!-- ?Проверь пожалуйста. Прогнал на валидаторе все работает. -->
+<!-- ?Попробовал написать классы по БЭМ --> 
 <!-- ! Спасибо!:) -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Студия Nerds каталог</title>
+    <title>Web-студия "NERDS" - Каталог</title>
     <link rel="stylesheet" href="css/style_index.css">
   </head>
 
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <img class="logo-main" src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии Nerds">
-        <ul class="site-navigation">
-          <li><a href="index.html" aria-label="Переход на главную страницу">Студия</a></li>
-          <li><a href="clients.html" aria-label="Переход на страницу с клиентами нашей фирмы">Клиенты</a></li>
-          <li class="site-navigation-current"><a href="catalog.html" aria-label="Переход на страницу магазина">Магазин</a></li>
-          <li><a href="contacts.html" aria-label="Переход на страницу контактов">Контакты</a></li>
+      <nav class="main-header__main-navigation main-navigation">
+        <a class="main-navigation__logo">
+          <img class="logo-main" width="160" height="65" src="img/nerds-logo.png" alt="Логотип студии Nerds">
+        </a>
+        <ul class="main-navigation__site-navigation">
+          <li><a href="#" aria-label="Переход на страницу студии">Студия</a></li>
+          <li><a href="#" aria-label="Переход на страницу с клиентами нашей фирмы">Клиенты</a></li>
+          <li><a class="main-navigation__link--current">Магазин</a></li>
+          <li><a href="#" aria-label="Переход на страницу контактов">Контакты</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li class="basket-link" ><a href="#" aria-label="Переход в корзину товаров">Корзина</a></li>
+        <ul class="main-navigation__user-navigation">
+          <li class="main-navigation__basket-link"><a href="#" aria-label="Переход в корзину товаров">Корзина</a></li>
         </ul>
       </nav>
-      <h1>Магазин готовых шаблонов</h1>
     </header>
-
+      <!-- ! До этого комментария сделал классы по БЭМ - но ниже надо прерделать верстку -->
     <main class="container">
       <section class="filter">
-        <h2 class="filter-header visualy-hidden">Фильтр товаров.</h2>
-        <form class="filter-form" action="hhtp://echo.htmlacademy.ru" method="get" aria-label="Форма фильтра товаров">
+        <h2 class="visualy-hidden">Фильтр товаров.</h2>
+        <form class="filter-form" action="http://echo.htmlacademy.ru" method="get" aria-label="Форма фильтра товаров">
           <div class="slider-coast-container">
             <label for="slider-coast-label">Стоимость:</label>
             <input type="range" min="1" max="1500" value="50" class="slider-coast" id="slider-coast-label" aria-label="Слайдер переключения стоимости в фильтре">
@@ -67,7 +69,7 @@
       </section>
 
       <section class="layouts">
-        <h2 class="header-hidden">Шаблоны веб-сайтов.</h2>
+        <h2 class="visually-hidden">Шаблоны веб-сайтов.</h2>
         <div class="sort">
           <p class="sort-caption">Сортировать:</p>
           <ul class="sort-iteems">
@@ -83,7 +85,7 @@
       </section>
 
       <section class="gallery">
-        <h2 class="gallery-header visualy-hidden">Галерея готовых шаблонов.</h2>
+        <h2 class="visually-hidden">Галерея готовых шаблонов.</h2>
         <ul class="gallery-items">
           <li class="gallery-item"><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedoyf макет."></li>
           <li class="gallery-item"><img src="img/img-pink.jpg" width="360" height="576" alt="Pink шаблон"></li>
@@ -133,27 +135,28 @@
         <b class="cost">9900 руб.</b>
       </div>
     </main>
-
-    <footer class="main-footer">
-      <div class="footer-contact-map">
-        <div class="footer-contact">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург, <br>
-          ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>тел. +7(812)275-75-75</p>
-          <a class="footer-contact-button" href="#" aria-label="Ссылка на форму отправки данных">Напишите нам</a>
+      <!-- ! После этого комментария сделал классы по БЭМ - но ниже надо прерделать верстку -->
+      <footer class="main-footer">
+        <div class="main-footer__contacts contacts">
+          <div class="contacts__contacts">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>191186, Санкт-Петербург, <br>
+            ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>тел. +7(812)275-75-75</p>
+            <a class="contacts__button" href="#" aria-label="Ссылка на форму отправки данных">Напишите нам</a>
+          </div>
         </div>
-      </div>
-      <div class="footer-social">
-        <b>Давайте дружить это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul class="social">
-          <li><a class="social-button"  href="https://vk.com/" aria-label="Переход на нашу страницу в ВК">Вконтакте</a></li>
-          <li><a class="social-button" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook">Фэйсбук</a></li>
-          <li><a class="social-button" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram">Инстаграм</a></li>
-        </ul>
-      </div>
-    </footer>
+  
+        <div class="main-footer__social social">
+          <b>Давайте дружить это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+          <ul class="social__social-links">
+            <li><a class="social__link" href="https://vk.com/" aria-label="Переход на нашу страницу в ВК">Вконтакте</a></li>
+            <li><a class="social__link" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook">Фэйсбук</a></li>
+            <li><a class="social__link" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram">Инстаграм</a></li>
+          </ul>
+        </div>
+      </footer>
   </body>
 </html>
