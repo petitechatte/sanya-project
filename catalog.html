@@ -10,13 +10,15 @@
   <head>
     <meta charset="utf-8">
     <title>Веб-студия "NERDS" - Каталог</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style_index.css">
   </head>
 
   <body>
     <header class="main-header">
       <nav class="main-header__main-navigation main-navigation">
-        <a class="main-navigation__link">
+        <a class="main-navigation__link" href="index.html">
           <img class="main-navigation__logo" width="160" height="65" src="img/nerds-logo.png" alt="Логотип студии Nerds">
         </a>
         <ul class="main-navigation__site-navigation">
@@ -32,8 +34,8 @@
       <h1>Магазин готовых шаблонов</h1>
     </header>
 
-    <main class="container">
-      <section class="container__filter filter">
+    <main class="container-catalog container">
+      <section class="container-catalog__filter filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter__form form" action="http://echo.htmlacademy.ru" method="get" aria-label="Форма фильтра товаров">
           <fieldset class="form__slider">
@@ -72,9 +74,9 @@
         </form>
       </section>
 
-      <section class="container__layouts">
+      <section class="container-catalog__layouts">
         <h2 class="visually-hidden">Шаблоны веб-сайтов</h2>
-        <div class="container__layouts-sort layouts-sort">
+        <div class="container-catalog__layouts-sort layouts-sort">
           <p class="layouts-sort__title">Сортировать:</p>
           <ul class="layouts-sort__links">
             <li class="layouts-sort__link--current"><a href="#">По цене</a></li>
@@ -87,7 +89,7 @@
           </ul>
         </div>
 
-        <section class="container__layouts gallery">
+        <section class="container-catalog__gallery gallery">
           <h3 class="visually-hidden">Галерея готовых шаблонов</h3>
           <ul class="gallery__items">
             <li class="gallery__item">
@@ -139,7 +141,7 @@
                 </div>
             </li>
           </ul>
-          <div class="container__layouts pagination">
+          <div class="container-catalog__pagination pagination">
             <ul class="pagination__items">
               <li class="pagination__item-previous visually-hidden"><button class="pagination__button" type="button" value="previous">Предыдущая</button></li>
               <li class="pagination__item--current"><button class="pagination__button" type="button" value="1">1</button></li>
@@ -160,6 +162,9 @@
             </p>
             <p>тел. +7(812)275-75-75</p>
             <a class="contacts__button" href="#" aria-label="Ссылка на форму отправки данных">Напишите нам</a>
+            <div class="contacts__map">
+              <span class="contacts__marker"></span>
+            </div>
           </div>
         </div>
 
@@ -167,9 +172,9 @@
           <b>Давайте дружить это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей</p>
           <ul class="social__social-links">
-            <li><a class="social__link" href="https://vk.com/" aria-label="Переход на нашу страницу в ВК">Вконтакте</a></li>
-            <li><a class="social__link" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook">Facebook</a></li>
-            <li><a class="social__link" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram">Instagram</a></li>
+            <li><a class="social__link" href="https://vk.com/" aria-label="Переход на нашу страницу в Вконтакте"><img src="../img/vk-icon.png" alt="Иконка ВК">Вконтакте</a></li>
+            <li><a class="social__link" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook"><img src="../img/fb-icon.png" alt="Иконка FB">Facebook</a></li>
+            <li><a class="social__link" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram"><img src="../img/insta-icon.png" alt="Иконка Insta">Instagram</a></li>
           </ul>
         </div>
       </footer>

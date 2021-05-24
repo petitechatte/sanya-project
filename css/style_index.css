@@ -1,5 +1,6 @@
 
-/*Обнуление*/
+/* !!! Обнуление */
+
 /*
 *{
 	padding: 0;
@@ -45,6 +46,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 */
 
+/* ??? Глобальные стили */
 
 .visually-hidden {
 	position: absolute;
@@ -56,3 +58,422 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	border: 0;
 	clip: rect(0 0 0 0)
 }
+
+body {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+	font-weight: 400;
+
+	background-color: #ffffff;
+	background-image: url(../img/background_index.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation__site-navigation,
+.main-navigation__user-navigation,
+.slide-items__slide-controls,
+.studio__items,
+.partners__list,
+.social__social-links {
+	list-style: none;
+}
+
+/* ???index.html */
+
+/* !!! header */
+
+/* !main-header */
+
+/* ?Логотип ссылка интерактив каталога */
+
+.main-navigation__link:hover,
+.main-navigation__link:focus {
+	opacity: 0.8;
+}
+
+.main-navigation__link:active {
+	opacity: 0.3;
+}
+
+/* ?Основная навигация */
+
+.main-header {
+	background-color: #eeeeee;
+	background-image: url(../img/background-header.png);
+	background-size: 1440px 579px;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 30px;
+	color: #000000;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.main-navigation a {
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+	color: #fb565a;
+}
+
+.main-navigation a:active {
+	color: #a6a6a6;
+}
+
+.main-navigation__link--current::after {
+    content: url("../img/main_nav_active.png");
+}
+
+/* ?Корзина эмблема */
+
+.main-navigation__basket-link a{
+	background-image: url(../img/cart-icon.png);
+	background-size: 15px 15px;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+/* ?Кнопки слайдеров */
+
+.slide__lead {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+}
+
+.slide__link {
+	width: 240px;
+	height: 50px;
+	font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+	background-color: #fb565a;
+	text-transform: uppercase;
+}
+
+.slide__link:hover,
+.slide__link:focus {
+	background-color: #e74246;
+	color: #ffffff ;
+}
+
+.slide__link:active {
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0px 0px rgba(0,1,1,0.09);
+	color: #ffffff;
+}
+.slide__link a:active{
+	opacity: 0.3;
+}
+
+/* !!! body */
+
+/* !container__advantages */
+
+.advantages__item h3 {
+    font-size: 24px;
+	line-height: 30px;
+}
+
+/* ?Изображения преимуществ */
+
+.item-1 {
+	background-image: url(../img/advantages-illustration-1.png);
+	background-size: 300px 146px;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.item-2 {
+	background-image: url(../img/advantages-illustration-2.png);
+	background-size: 300px 146px;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.item-3 {
+	background-image: url(../img/advantages-illustration-3.png);
+	background-size: 300px 146px;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+/* ?Кнопки преимуществ интерактив */
+
+/* Кнопка 1 */
+
+.advantages__button1 {
+	width: 160px;
+    height: 50px;
+	font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+	background-color: #fb565a;
+	color: #ffffff;
+}
+
+.advantages__button1:hover,
+.advantages__button1:focus {
+    background-color: #e74246;
+	color: #ffffff;
+}
+
+.advantages__button1:active {
+    background-color: #d7373b;
+	color: #ffffff;
+	box-shadow: inset 0px 3px 0px 0px rgba(0,1,1,0.09);
+}
+
+.advantages__button1 a:active {
+	opacity: 0.3;
+}
+
+/* Кнопка 2 */
+.advantages__button2 {
+	width: 160px;
+    height: 50px;
+	font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+	background-color: #00ca74;
+	color: #ffffff;
+}
+
+.advantages__button2:hover,
+.advantages__button2:focus {
+    background-color: #00bc6c;
+	color: #ffffff;
+}
+
+.advantages__button2:active {
+    background-color: #00aa62;
+	color: #ffffff;
+	box-shadow: inset 0px 3px 0px 0px rgba(0,1,1,0.09);
+}
+
+.advantages__button2 a:active {
+	opacity: 0.3;
+}
+
+/* Кнопка 3 */
+
+.advantages__button3 {
+	width: 160px;
+    height: 50px;
+	font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+	background-color: #efc84a;
+	color: #ffffff;
+}
+
+.advantages__button3:hover,
+.advantages__button3:focus {
+    background-color: #eab534;
+	color: #ffffff;
+}
+
+.advantages__button3:active {
+    background-color: #e5a722;
+	color: #ffffff;
+	box-shadow: inset 0px 3px 0px 0px rgba(0,1,1,0.09);
+}
+
+.advantages__button3 a:active {
+	opacity: 0.3;
+}
+
+/* ?Формирование блоков */
+
+.advantages__items {
+	list-style: none;
+}
+
+.advantages__item {
+	text-align: left;
+}
+
+.advantages__item h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+/* !container__studio */
+
+.studio__lead {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.studio__title-items {
+	text-transform: uppercase;
+}
+
+.studio__information {
+	background-image: url(../img/nerds-illustration.png);
+	background-size: 360px 208px;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.studio__information span {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.information__percents {
+	font-size: 45px;
+	line-height: 10.06px;
+	font-weight: 700;
+}
+
+.information__descriptions {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+/* !partners */
+
+/* ?Логотипы партнеров интерактив*/
+
+.partners__list-item a {
+	opacity: 0.2;
+}
+
+.partners__list-item a:hover,
+.partners__list-item a:focus {
+	opacity: 1;
+}
+
+.partners__list-item a:active {
+	opacity: 0.1;
+}
+
+/* !!! footer */
+
+/* !contacts__contacts */
+
+.main-footer__contacts {
+	background-color: #ffffff;
+}
+
+.contacts__contacts h3 {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.contacts__contacts p {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.contacts__button {
+    background-color: #fb565a;
+	color: #ffffff;
+}
+
+.contacts__button:hover,
+.contacts__button:focus {
+	background-color: #e74246;
+	color: #ffffff;
+}
+
+.contacts__button:active {
+    background-color: #d7373b;
+	color: #ffffff;
+    box-shadow: inset 0px 3px 0px 0px rgba(0,1,1,0.09);
+}
+
+/* ?Карта в футере */
+
+.contacts__map {
+	display: block;
+	width: 1440px;
+	height: 416px;
+	background-image: url(../img/map-image.png);
+	background-size: 1440px 416px;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.contacts__marker {
+	display: block;
+	width: 231px;
+	height: 190px;
+	background-image: url(../img/map-marker.png);
+	background-size: 231px 190px;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+/* !social__social-links */
+
+/* ?Социальные иконки интерактив */
+
+.social__social-links a {
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.social__link {
+	width: 79px;
+    height: 79px;
+	background-color: #e1e1e1;
+}
+
+.social__link:hover,
+.social__link:focus {
+	background-color: #e74246;
+}
+
+.social__link:active {
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0px 0px rgba(0,1,1,0.09);
+}
+
+.social__link a:active {
+    opacity: 0.3;
+}
+
+.main-footer__social b {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+/* ???catalog.html */
+
+/* !!!header */
+
+.main-header h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	text-align: center;
+}
+
+/* !!!container-catalog */
+
+/* ?фильтр обнуление стилей и интерактив */
