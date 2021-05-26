@@ -1,8 +1,11 @@
-<!-- Сделал по заданию 4 главы 1 курса -->
+<!-- Сделал по заданию 5 главы 1 курса -->
 <!-- Исправил замечания -->
-<!-- ?Прогнал на валидаторе все работает. -->
-<!-- ?Попробовал написать классы по БЭМ --> 
+<!-- ?HTML Прогнал на валидаторе все работает. -->
+<!-- ?Исправил ошибки и классы по БЭМ --> 
 <!-- ?Перепроверил в браузере и перечитал код-->
+
+<!-- ?Сделал базовую стилизацию страницы. Проверил. Прогнал CSS на валидацию -все работает. -->
+
 <!-- !Проверь пожалуйста :) Спасибо!:) -->
 
 <!DOCTYPE html>
@@ -43,32 +46,32 @@
             <input class="form__slider-cost" type="range" min="1" max="15000" value="50" aria-label="Слайдер переключения стоимости в фильтре">
             <span class="form__slider-button"></span>
             <span class="form__slider-button"></span>
-            <label class="form__label-coast-from" for="coast-from">от</label>
+            <label class="form__label" for="coast-from">от</label>
             <output class="form__min-cost" name="form-min-cost" id="coast-from" aria-label="Минимальная цена">0</output>
-            <label class="form__label-cost-up-to" for="cost-up-to">до</label>
+            <label class="form__label" for="cost-up-to">до</label>
             <output class="form__max-cost" name="form-max-cost" id="cost-up-to" aria-label="Максимальная цена">15000</output>
           </fieldset>
           <fieldset class="form__radio-block">
             <legend class="form__radio-llegend">Сетка:</legend>
             <input class="form__radio" type="radio" id="radio-block-adaptive" name="radio-block" value="adaptive" aria-label="Переключатель выбирает адаптивную сетку" checked>
-            <label class="form__label-radio-adaptive" for="radio-block-adaptive">Адаптивная</label>
+            <label class="form__label" for="radio-block-adaptive">Адаптивная</label>
             <input class="form__radio" type="radio" id="radio-block-fixed" name="radio-block" value="fixed" aria-label="Переключатель выбирает фиксированную сетку">
-            <label class="form__label-radio-fixed" for="radio-block-fixed">Фиксированная</label>
+            <label class="form__label" for="radio-block-fixed">Фиксированная</label>
             <input class="form__radio" type="radio" id="radio-block-rubber" name="radio-block" value="rubber" aria-label="Переключатель выбирает резиновую сетку" disabled>
-            <label class="form__label-radio-rubber" for="radio-block-rubber">Резина</label>
+            <label class="form__label" for="radio-block-rubber">Резина</label>
           </fieldset>
           <fieldset class="form__checkbox-block">
             <legend class="">Особенности:</legend>
             <input class="form__checkbox" type="checkbox" id="checkbox-slider" name="slider-checkbox" value="slider" checked aria-label="Чекбокс выбирает наличие слайдера">
-            <label class="form__label-checkbox-slider" for="checkbox-slider">Слайдер</label>
+            <label class="form__label" for="checkbox-slider">Слайдер</label>
             <input class="form__checkbox" type="checkbox" id="checkbox-features" name="features-checkbox" value="feautures" aria-label="Чекбокс выбирает наличие списка преимуществ">
-            <label class="form__label-checkbox-features" for="checkbox-features">Блок преимуществ</label>
+            <label class="form__label" for="checkbox-features">Блок преимуществ</label>
             <input class="form__checkbox" type="checkbox" id="checkbox-news" name="news-checkbox" value="news" checked aria-label="Чекбокс выбирает наличие блока новостей">
-            <label class="form__label-checkbox-news" for="checkbox-news">Новости</label>
+            <label class="form__label" for="checkbox-news">Новости</label>
             <input class="form__checkbox" type="checkbox" id="checkbox-gallery" name="gallery-checkbox" value="gallery" aria-label="Чекбокс выбирает наличие галлереи" >
-            <label class="form__label-checkbox-gallery" for="checkbox-gallery">Галерея</label>
+            <label class="form__label" for="checkbox-gallery">Галерея</label>
             <input class="form__checkbox" type="checkbox" id="checkbox-basket" name="basket-checkbox" value="basket" aria-label="Чекбокс выбирает наличие корзины покупок">
-            <label class="form__label-checkbox-basket" for="checkbox-basket">Корзина</label>
+            <label class="form__label" for="checkbox-basket">Корзина</label>
           </fieldset>
           <button class="form__form-button" type="submit" name="filter-form-button" aria-label="При нажатии на кнопку отправиться значения формы">Показать</button>
         </form>
@@ -94,7 +97,7 @@
           <ul class="gallery__items">
             <li class="gallery__item">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona макет">
-              <div class="gallery__sedona-hover">
+              <div class="gallery__hover">
                 <a class="gallery__title-link" href="#">Sedona</a>
                 <p>Информацинный сайт для туристов</p>
                 <b class="gallery__cost">9 900 руб</b>
@@ -102,7 +105,7 @@
             </li>
             <li class="gallery__item">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Pink шаблон">
-              <div class="pink-hover">
+              <div class="gallery__hover">
                 <a class="gallery__title-link" href="#">Pink app</a>
                 <p>Продуктовый лендинг приложения для IOS и Android</p>
                 <b class="gallery__cost">9 900 руб</b>
@@ -110,7 +113,7 @@
             </li>
             <li class="gallery__item">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski макет">
-              <div class="barbershop-hover">
+              <div class="gallery__hover">
                 <a class="gallery__title-link" href="#">Barbershop Borodinski</a>
                 <p>Сайт салон красоты <span>Для мужчин, да</span></p>
                 <b class="gallery__cost">9 900 руб</b>
@@ -118,7 +121,7 @@
             </li>
             <li class="gallery__item">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka макет">
-              <div class="mishka-hover">
+              <div class="gallery__hover">
                 <a class="gallery__title-link" href="#">Mishka</a>
                 <p>Интерент-магазин вязаных игрушек</p>
                 <b class="gallery__cost">9 900 руб</b>
@@ -126,7 +129,7 @@
             </li>
             <li class="gallery__item">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="A plus макет">
-              <div class="a-plus-hover">
+              <div class="gallery__hover">
                 <a class="gallery__title-link" href="#">A plus</a>
                 <p>Лендинг курсов повышения квалификации</p>
                 <b class="gallery__cost">9 900 руб</b>
@@ -134,7 +137,7 @@
             </li>
             <li class="gallery__item">
               <img src="img/img-kvast.jpg"  width="360" height="576" alt="Кваст макет">
-              <div class="kvast-hover">
+              <div class="gallery__hover">
                 <a class="gallery__title-link" href="#">Кваст</a>
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <b class="gallery__cost">9 900 руб</b>

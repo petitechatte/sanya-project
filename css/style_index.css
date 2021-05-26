@@ -1,3 +1,9 @@
+/* Сделал по заданию 5 главы 1 курса */
+/* ?Сделал базовую стилизацию */
+/* ?index page */
+/* ?catalog page */
+
+/* ?Проверил. Прогнал CSS на валидацию -все работает. */
 
 /* !!! Обнуление */
 
@@ -182,6 +188,22 @@ a {
 .slide__link a:active{
 	opacity: 0.3;
 }
+
+.slide-controls__button {
+	background-color: #eeeeee;
+}
+
+.slide-controls__button:hover,
+.slide-controls__button:focus {
+	background-color: #dfdfdf;
+}
+
+.slide-controls__button:active {
+	background-color: #d5d5d5;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+/* Похожие у кнопок Показать */
 
 /* !!! body */
 
@@ -477,3 +499,142 @@ a {
 /* !!!container-catalog */
 
 /* ?фильтр обнуление стилей и интерактив */
+
+.form fieldset {
+	border: none;
+}
+
+.form legend {
+	color: #000000;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.form__slider{
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.form__slider input {
+	background-color: #eeeeee;
+}
+
+.form__slider .form__label{
+	text-transform: uppercase;
+	background-color: #eeeeee;
+}
+
+.filter .form__radio ,
+.filter .form__checkbox ,
+.filter .form__label {
+	color: #283136;
+
+}
+
+.filter .form__radio:hover ,
+.filter .form__radio:focus ,
+.filter .form__checkbox:hover ,
+.filter .form__checkbox:focus ,
+.filter .form__label:hover ,
+.filter .form__label:focus {
+	color: #000000;
+}
+
+.filter .form__radio:disabled ,
+.filter .form__checkbox:disabled ,
+.form__label:disabled {
+	color: #283136;
+	opacity: 0.3;
+}
+
+.form__form-button {
+	background-color: #eeeeee;
+	border: none;
+}
+
+.form__form-button:hover,
+.form__form-button:focus {
+	background-color: #dfdfdf;
+}
+
+.form__form-button:active {
+	background-color: #d5d5d5;
+}
+
+/* !layouts-sort */
+
+.layouts-sort ul {
+	list-style: none;
+}
+
+.layouts-sort a {
+	color: #000000;
+}
+
+.layouts-sort__link {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	opacity: 0.3;
+}
+
+.layouts-sort__link--current {
+    opacity: 1;
+}
+
+.layouts-sort__item--current button {
+	background-color: #000000;
+}
+
+.layouts-sort__item button {
+    background-color: #000000;
+	opacity: 0.3;
+}
+
+.gallery ul {
+	list-style: none;
+}
+
+.gallery__hover {
+    background-color: #eeeeee;
+	text-align: center;
+}
+
+.gallery__title-link {
+	color: #000000;
+    text-transform: uppercase;
+	font-size: 18px;
+	line-height: 30px;
+    font-weight: 700;
+}
+
+.gallery__sedona-hover p {
+	color: #666666;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.gallery__cost {
+	color: #ffffff;
+    text-transform: uppercase;
+	background-color: #fb565a;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+/* !pagination__items */
+
+.pagination__button {
+	background-color: #eeeeee;
+	border: none;
+	text-transform: uppercase;
+}
+
+.pagination__item--current button{
+    background-color: #ffffff;
+	border: 3px solid #dbdbdb;
+}
