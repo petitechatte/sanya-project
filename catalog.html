@@ -1,8 +1,7 @@
 <!-- Сделал по заданию 5 главы 1 курса -->
-<!-- Исправил замечания -->
+<!-- Исправил замечания 3 пулреквеста-->
 <!-- ?HTML Прогнал на валидаторе все работает. -->
-<!-- ?Исправил ошибки и классы по БЭМ --> 
-<!-- ?Перепроверил в браузере и перечитал код-->
+<!-- ?Исправил ошибки. Перепроверил. --> 
 
 <!-- ?Сделал базовую стилизацию страницы. Проверил. Прогнал CSS на валидацию -все работает. -->
 
@@ -12,7 +11,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Веб-студия "NERDS" - Каталог</title>
+    <title>Веб-студия "NЁRDS" - Каталог</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style_index.css">
@@ -98,59 +97,59 @@
             <li class="gallery__item">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona макет">
               <div class="gallery__hover">
-                <a class="gallery__title-link" href="#">Sedona</a>
+                <h4><a class="gallery__title-link" href="#">Sedona</a></h4>
                 <p>Информацинный сайт для туристов</p>
-                <b class="gallery__cost">9 900 руб</b>
+                <a class="gallery__cost button">9 900 руб.</a>
               </div>
             </li>
             <li class="gallery__item">
-              <img src="img/img-pink.jpg" width="360" height="576" alt="Pink шаблон">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Pink макет">
               <div class="gallery__hover">
-                <a class="gallery__title-link" href="#">Pink app</a>
-                <p>Продуктовый лендинг приложения для IOS и Android</p>
-                <b class="gallery__cost">9 900 руб</b>
+                <h4><a class="gallery__title-link" href="#">Pink app</a></h4>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="gallery__cost button">9 900 руб.</a>
               </div>
             </li>
             <li class="gallery__item">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski макет">
               <div class="gallery__hover">
-                <a class="gallery__title-link" href="#">Barbershop Borodinski</a>
-                <p>Сайт салон красоты <span>Для мужчин, да</span></p>
-                <b class="gallery__cost">9 900 руб</b>
+                <h4><a class="gallery__title-link" href="#">Barbershop</a></h4>
+                <p>Сайт салон красоты Для мужчин, да</p>
+                <a class="gallery__cost button">9 900 руб.</a>
               </div>
             </li>
             <li class="gallery__item">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka макет">
               <div class="gallery__hover">
-                <a class="gallery__title-link" href="#">Mishka</a>
+                <h4><a class="gallery__title-link" href="#">Mishka</a></h4>
                 <p>Интерент-магазин вязаных игрушек</p>
-                <b class="gallery__cost">9 900 руб</b>
+                <a class="gallery__cost button">9 900 руб.</a>
               </div>
             </li>
             <li class="gallery__item">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="A plus макет">
               <div class="gallery__hover">
-                <a class="gallery__title-link" href="#">A plus</a>
+                <h4><a class="gallery__title-link" href="#">A plus</a></h4>
                 <p>Лендинг курсов повышения квалификации</p>
-                <b class="gallery__cost">9 900 руб</b>
+                <a class="gallery__cost button">9 900 руб.</a>
               </div>
             </li>
             <li class="gallery__item">
               <img src="img/img-kvast.jpg"  width="360" height="576" alt="Кваст макет">
               <div class="gallery__hover">
-                <a class="gallery__title-link" href="#">Кваст</a>
+                <h4><a class="gallery__title-link" href="#">Кваст</a></h4>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <b class="gallery__cost">9 900 руб</b>
+                <a class="gallery__cost button">9 900 руб.</a>
                 </div>
             </li>
           </ul>
           <div class="container__pagination pagination">
             <ul class="pagination__items">
-              <li class="pagination__item-previous visually-hidden"><button class="pagination__button" type="button" value="previous">Предыдущая</button></li>
-              <li class="pagination__item--current"><button class="pagination__button" type="button" value="1">1</button></li>
-              <li class="pagination__item"><button class="pagination__button" type="button" value="2">2</button></li>
-              <li class="pagination__item"><button class="pagination__button" type="button" value="3">3</button></li>
-              <li class="pagination__item-next"><button class="pagination__button" type="button" value="next">Следующая</button></li>
+              <li class="pagination__item--previous visually-hidden"><a class="pagination__button" href="#">Предыдущая</a></li>
+              <li class="pagination__item--current"><a class="pagination__button" href="#">1</button></li>
+              <li class="pagination__item"><a class="pagination__button" href="#">2</a></li>
+              <li class="pagination__item"><a class="pagination__button" href="#">3</a></li>
+              <li class="pagination__item--next"><a class="pagination__button" href="#">Следующая</a></li>
             </ul>
           </div>
         </section>
@@ -159,30 +158,43 @@
 
     <footer class="main-footer container-centerer">
       <div class="main-footer__contacts contacts ">
-        <div class="wrapper-map">
+        <div class="contacts__wrapper-map">
           <div class="contacts__map">
             <span class="contacts__marker"></span>
           </div>
         </div>
-        <div class="contacts__contacts">
-          <h3>Nerds design studio</h3>
+        <div class="contacts__addres">
+          <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8
           </p>
           <p>тел. +7(812)275-75-75</p>
-          <a class="contacts__button" href="#" aria-label="Ссылка на форму отправки данных">Напишите нам</a>
+          <a class="contacts__button button" href="#" aria-label="Ссылка на форму отправки данных">Напишите нам</a>
         </div>
       </div>
 
         <div class="main-footer__social social">
           <b>Давайте дружить это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
           <ul class="social__social-links">
-            <li><a class="social__link" href="https://vk.com/" aria-label="Переход на нашу страницу в Вконтакте"><img src="../img/vk-icon.png" alt="Иконка ВК">Вконтакте</a></li>
-            <li><a class="social__link" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook"><img src="../img/fb-icon.png" alt="Иконка FB">Facebook</a></li>
-            <li><a class="social__link" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram"><img src="../img/insta-icon.png" alt="Иконка Insta">Instagram</a></li>
+            <li><a class="social__link" href="https://vk.com/" aria-label="Переход на нашу страницу в Вконтакте">Вконтакте</a></li>
+            <li><a class="social__link" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook">Facebook</a></li>
+            <li><a class="social__link" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram">Instagram</a></li>
           </ul>
         </div>
       </footer>
+
+      <div class="modal visually-hidden">
+        <h2 class="modal__header">Напишите нам</h2>
+        <form class="modal__form form" action="http://echo.htmlacademy.ru" method="post">
+          <label class="form__label" for="username">Ваше имя:</label>
+          <input class="form__username" type="text" id="username" placeholder="Представьтесь, пожалуйста" aria-label="Поле ввода вашего имени">
+          <label class="form__label" for="email">Ваш e-mail:</label>
+          <input class="form__email" type="text" id="email" placeholder="Для отправки ответа" aria-label="Поле ввода вашего электронного адреса">
+          <label class="form__label" for="letter">Текст письма:</label>
+          <textarea class="form__letter" name="user-letter" id="letter" placeholder="В свободной форме" aria-label="Поле ввода текста вашего письма"></textarea>
+        </form>
+        <button class="modal__button button" type="submit" aria-label="Кнопка отправки формы">Отправить</button>
+      </div>
   </body>
 </html>

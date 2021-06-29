@@ -1,8 +1,7 @@
 ﻿<!-- Сделал по заданию 5 главы 1 курса -->
-<!-- Исправил замечания -->
+<!-- Исправил замечания 3 пулреквеста-->
 <!-- ?HTML Прогнал на валидаторе все работает. -->
-<!-- ?Исправил ошибки и классы по БЭМ --> 
-<!-- ?Перепроверил в браузере и перечитал код-->
+<!-- ?Исправил ошибки. Перепроверил. --> 
 
 <!-- ?Сделал базовую стилизацию страницы. Проверил. Прогнал CSS на валидацию -все работает. -->
 
@@ -12,7 +11,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Веб-студия "NERDS"</title>
+    <title>Веб-студия "NЁRDS"</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style_index.css">
@@ -35,9 +34,9 @@
         </ul>  <!-- TODO Переделать стили -->
       </nav>
 
-      <section class="main-header__slide-items slide-items container-centerer">
+      <section class="main-header__our-principles our-principles container-centerer">
         <h2 class="visually-hidden">Слайдер</h2>
-        <div class="slide-items__slide slide slide-1">
+        <div class="our-principles__slide slide slide--1">
           <div class="wrapper-slide">
             <b class="slide__lead">Долго, дорого скурпулезно.</b>
             <p class="slide__text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
@@ -51,21 +50,21 @@
             </div>
           </div>
         </div>
-        <div class="slide slide-2 visually-hidden">
+        <div class="our-principles__slide slide slide--2 visually-hidden">
           <div class="wrapper-slide">
             <b class="slide__lead">Любим математику как никто другой</b>
             <p class="slide__text">Никакого креатива, только математические формулы для рассчета идеальных пропорций.</p>
             <div class="wrapper-buttons">
               <a class="slide__link button" href="#" aria-label="Ссылка на переход на рекламную информацию">Узнать больше</a>
               <ul class="slide__slide-controls slide-controls">
-                <li class="slide-controls__switcher"><button class="slide-controls__button-1 slide-controls__button" type="button" aria-label="Кнопка переключателя"></button></li>
-                <li class="slide-controls__switcher"><button class="slide-controls__button-2 slide-controls__button" type="button" aria-label="Кнопка переключателя"></button></li>
-                <li class="slide-controls__switcher"><button class="slide-controls__button-3 slide-controls__button" type="button" aria-label="Кнопка переключателя"></button></li>
+                <li class="slide-controls__switcher"><button class="slide-controls__button-1 slide-controls__button" type="button" aria-label="Кнопка переключения на 1 слайд"></button></li>
+                <li class="slide-controls__switcher"><button class="slide-controls__button-2 slide-controls__button" type="button" aria-label="Кнопка переключения на 2 слайд"></button></li>
+                <li class="slide-controls__switcher"><button class="slide-controls__button-3 slide-controls__button" type="button" aria-label="Кнопка переключения на 3 слайд"></button></li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="slide slide-3 visually-hidden">
+        <div class="our-principles__slide slide slide--3 visually-hidden">
           <div class="wrapper-slide">
             <b class="slide__lead">Только ночь, только хардкор</b>
             <p class="slide__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
@@ -83,24 +82,24 @@
     </header>
 
     <main class="container container-centerer">
-      <h1 class="visually-hidden">Веб-студия Nerds</h1>
+      <h1 class="visually-hidden">Веб-студия Nёrds</h1>
       <section class="container__advantages advantages">
-        <h2 class="visually-hidden">Преимущества студии Nerds</h2>
+        <h2 class="visually-hidden">Преимущества студии Nёrds</h2>
         <ul class="advantages__items">
-          <li class="advantages__item item-1">
+          <li class="advantages__item advantages__item--1">
             <h3>Веб-сайты</h3>
             <b class="advantages__lead">Мир никогда не будет прежним после того как увидит ваш сайт!</b>
-            <a class="advantages__button1 advantages-button" href="#">Заказать</a>
+            <a class="advantages__button advantages__button--1" href="#">Заказать</a>
           </li>
-          <li class="advantages__item item-2">
+          <li class="advantages__item advantages__item--2">
             <h3>Приложения</h3>
             <b class="advantages__lead">Покорите топ-10 приложений в AppStore и Google Play</b>
-            <a class="advantages__button2 advantages-button" href="#">Заказать</a>
+            <a class="advantages__button advantages__button--2" href="#">Заказать</a>
           </li>
-          <li class="advantages__item item-3">
+          <li class="advantages__item advantages__item--3">
             <h3>Презентации</h3>
             <b class="advantages__lead">Вы даже не подозреваете, насколько вы изумительны!</b>
-            <a class="advantages__button3 advantages-button" href="#">Заказать</a>
+            <a class="advantages__button advantages__button--3" href="#">Заказать</a>
           </li>
         </ul>
       </section>
@@ -114,12 +113,12 @@
           <h3 class="studio__title-items">Выполняем заказы на разработку:</h3>
           <ul class="studio__items">
             <li class="studio__services-item">Веб-сайтов любой сложности</li>
-            <li class="studio__services-item">Мобильных приложений для IOS и Android</li>
+            <li class="studio__services-item">Мобильных приложений для iOS и Android</li>
             <li class="studio__services-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <div class="studio__information information">
-          <span>С 2004 года любим точность во всем:</span>
+          <span class="information__tagline">С 2004 года любим точность во всем:</span>
           <table class="information__statistic">
             <tr class="information__percents">
               <td>146%</td>
@@ -147,31 +146,44 @@
     </main>
 
     <footer class="main-footer container-centerer">
-      <div class="main-footer__contacts contacts ">
+      <div class="main-footer__contacts contacts">
         <div class="wrapper-map">
           <div class="contacts__map">
             <span class="contacts__marker"></span>
           </div>
         </div>
-        <div class="contacts__contacts">
-          <h3>Nerds design studio</h3>
+        <div class="contacts__addres">
+          <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8
           </p>
           <p>тел. +7(812)275-75-75</p>
-          <a class="contacts__button" href="#" aria-label="Ссылка на форму отправки данных">Напишите нам</a>
+          <a class="contacts__button button" href="#" aria-label="Ссылка на форму отправки данных">Напишите нам</a>
         </div>
       </div>
 
       <div class="main-footer__social social">
         <b>Давайте дружить это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
         <ul class="social__social-links">
-          <li><a class="social__link" href="https://vk.com/" aria-label="Переход на нашу страницу в ВК"><img src="../img/vk-icon.png" alt="Иконка ВК">Вконтакте</a></li>
-          <li><a class="social__link" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook"><img src="../img/fb-icon.png" alt="Иконка FB">Facebook</a></li>
-          <li><a class="social__link" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram"><img src="../img/insta-icon.png" alt="Иконка Insta">Instagram</a></li>
+          <li><a class="social__link" href="https://vk.com/" aria-label="Переход на нашу страницу в ВК">Вконтакте</a></li>
+          <li><a class="social__link" href="https://www.facebook.com/" aria-label="Переход на нашу страницу в Facebook">Facebook</a></li>
+          <li><a class="social__link" href="https://www.instagram.com/" aria-label="Переход на нашу страницу в Instagram">Instagram</a></li>
         </ul>
       </div>
     </footer>
+
+    <div class="modal visually-hidden">
+      <h2 class="modal__header">Напишите нам</h2>
+      <form class="modal__form form" action="http://echo.htmlacademy.ru" method="post">
+        <label class="form__label" for="username">Ваше имя:</label>
+        <input class="form__username" type="text" id="username" placeholder="Представьтесь, пожалуйста" aria-label="Поле ввода вашего имени">
+        <label class="form__label" for="email">Ваш e-mail:</label>
+        <input class="form__email" type="text" id="email" placeholder="Для отправки ответа" aria-label="Поле ввода вашего электронного адреса">
+        <label class="form__label" for="letter">Текст письма:</label>
+        <textarea class="form__letter" name="user-letter" id="letter" placeholder="В свободной форме" aria-label="Поле ввода текста вашего письма"></textarea>
+      </form>
+      <button class="modal__button button" type="submit" aria-label="Кнопка отправки формы">Отправить</button>
+    </div>
   </body>
 </html>
